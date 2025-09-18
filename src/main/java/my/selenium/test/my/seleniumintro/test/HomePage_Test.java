@@ -76,7 +76,7 @@ public class HomePage_Test {
         }else{
             System.out.println("Subscriptions Page is failed to load");
         }
-        HamburgerMenuCall();
+
     }
 
     public static void HistoryButtonCall(){
@@ -177,6 +177,7 @@ public class HomePage_Test {
         }else{
             System.out.println("Gaming unsuccessful");
         }
+        HamburgerMenuCall();
     }
 
     public static void SigninCall(){
@@ -201,7 +202,7 @@ public class HomePage_Test {
     }
     public static void VideoCall(){
         System.out.println("Signed in to YouTube");
-        WebDriverWait videowait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        WebDriverWait videowait = new WebDriverWait(driver,Duration.ofSeconds(15));
         WebElement videocard = videowait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[@id='video-title'])[1]")));
         videocard.click();
         System.out.println("Video clicked");
@@ -257,13 +258,14 @@ public class HomePage_Test {
 
     public static void HamburgerFunctions(){
         HamburgerMenuCall();
-        SubscriptionsButtonCall();
+
         ShoppingButtonCall();
         HistoryButtonCall();
         MusicButtonCall();
         MoviesButtonCall();
         LiveButtonCall();
         GamingButtonCall();
+        SubscriptionsButtonCall();
     }
 
     public static void UserFlow(){
