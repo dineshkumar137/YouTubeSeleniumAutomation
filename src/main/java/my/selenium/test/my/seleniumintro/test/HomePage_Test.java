@@ -258,7 +258,6 @@ public class HomePage_Test {
 
     public static void HamburgerFunctions(){
         HamburgerMenuCall();
-
         ShoppingButtonCall();
         HistoryButtonCall();
         MusicButtonCall();
@@ -274,6 +273,7 @@ public class HomePage_Test {
         VideoCall();
         MicBtnCall();
         NotificationCall();
+
 
     }
 	public static void main(String[]args) {
